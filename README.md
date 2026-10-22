@@ -1,8 +1,28 @@
-Martín Pentito
-Email Portfolio GitHub
+# Martín Pentito
 
-      
+<p align="left">
+  <a href="mailto:martinepentito@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://portafolio-espejo-codigo-html-css-j.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Live-0A66C2?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="https://github.com/MartinPentito" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
 
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white" alt="WordPress" />
+</p>
+
+```python
 # profile.py
 
 class Profile:
@@ -41,8 +61,6 @@ class Profile:
 
 
 class Services:
-    # ES / EN
-
     WEB_DEVELOPMENT = {
         "es": "Desarrollo Web",
         "en": "Web Development",
@@ -60,4 +78,52 @@ class Services:
         "es": "Compositor",
         "en": "Composer",
         "description_es": "Estudio Musical - JipiCueva",
-        "description_en": "Music
+        "description_en": "Music Studio - JipiCueva"
+    }
+
+
+class Stack:
+    TECH_STACK = ["HTML", "CSS", "JavaScript", "Python", "SQL", "Git"]
+    PLATFORMS = ["Windows", "Mobile", "WordPress", "macOS"]
+    TOOLS = ["Visual Studio Code", "GitHub", "XAMPP", "PHPMyAdmin"]
+
+
+class Projects:
+    PORTFOLIO_ESPEJO = {
+        "name": "Portfolio espejo",
+        "type": {
+            "es": "Proyecto personal",
+            "en": "Personal project"
+        },
+        "stack": ["HTML", "CSS", "JavaScript", "JSON"],
+        "url": "https://portafolio-espejo-codigo-html-css-j.vercel.app",
+        "repo": "https://github.com/MartinPentito/Portafolio_espejo_codigo_HTML_CSS_JS",
+        "description": {
+            "es": "Portfolio estático con estética de editor de código, fuente única de datos en JSON y render dinámico.",
+            "en": "Static portfolio with a code-editor aesthetic, single JSON data source, and dynamic rendering."
+        }
+    }
+
+
+class Contact:
+    EMAIL = "mailto:martinepentito@gmail.com"
+    PORTFOLIO = "https://portafolio-espejo-codigo-html-css-j.vercel.app"
+    GITHUB = "https://github.com/MartinPentito"
+
+    @staticmethod
+    def quick_links_terminal() -> str:
+        lines = [
+            "[CONTACT]",
+            f"├── email     : {Contact.EMAIL}",
+            f"├── portfolio : {Contact.PORTFOLIO}",
+            f"└── github    : {Contact.GITHUB}",
+        ]
+        return "\n".join(lines)
+
+
+if __name__ == "__main__":
+    print("ES: Tecnología para resolver problemas. Creatividad para abrir caminos.")
+    print("EN: Technology to solve problems. Creativity to open new paths.")
+    print()
+    print(Contact.quick_links_terminal())
+```
