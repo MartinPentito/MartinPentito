@@ -4,10 +4,10 @@
   <a href="mailto:martinepentito@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://portafolio-espejo-codigo-html-css-j.vercel.app" target="_blank">
+  <a href="https://portafolio-espejo-codigo-html-css-j.vercel.app" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Portfolio-Live-0A66C2?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
-  <a href="https://github.com/MartinPentito" target="_blank">
+  <a href="https://github.com/MartinPentito" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
@@ -89,6 +89,7 @@ class Stack:
 
 
 class Projects:
+    # Solo proyectos visibles y publicados / Only visible and published projects
     PORTFOLIO_ESPEJO = {
         "name": "Portfolio espejo",
         "type": {
